@@ -30,9 +30,9 @@ let Navbar = () => {
         let random3 = Math.random()*255
         // console.log(random.toFixed(0))
         let red = random1.toFixed(0)
-        let green = random1.toFixed(0)
-        let blue = random1.toFixed(0)
-        ev.target.style.backgroundColor= `rgb(${red},${green},${green})`
+        let green = random2.toFixed(0)
+        let blue = random3.toFixed(0)
+        ev.target.style.backgroundColor= `rgb(${red},${green},${blue})`
 
     }
 
