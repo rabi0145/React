@@ -5,6 +5,9 @@ import App from './App.jsx'
 import Home, { Second } from './assets/component/Home.jsx'
 import Navbar from './navbar.jsx'
 import First from './propsExample/first.jsx'
+import Greet from './assets/component/Greet.jsx'
+import Profile from './assets/component/stateExample/Profile.jsx'
+import User from './assets/component/User.jsx'
 
 let myObj = {
   address: "Kathmandu",
@@ -22,5 +25,8 @@ createRoot(document.getElementById('root')).render(
     <App />
     <Home />
     <Second />
+    <Greet />
+    <Profile />
+    <User {...myObj} />
   </StrictMode>,
 )
