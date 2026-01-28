@@ -1,4 +1,5 @@
 import { First } from "./assets/component/Home";
+import Check from "./Day6/Check";
 
 let App = ()=>{
   //return always return only one jsx element 
@@ -21,7 +22,7 @@ let App = ()=>{
       <p>Even or Odd: {45%2==0?"Even":"Odd"}</p>
       <h3>Count value: {count}</h3>
       <First />
-
+      <Check isLoggedIn={true}/>
     </div>
 
   )

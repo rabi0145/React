@@ -8,6 +8,8 @@ import First from './propsExample/first.jsx'
 import Greet from './assets/component/Greet.jsx'
 import Profile from './assets/component/stateExample/Profile.jsx'
 import User from './assets/component/User.jsx'
+import ThemeUpdate from './Day6/ThemeUpdate.jsx'
+import ConditionalReindering from './Day6/ConditionalRendering.jsx'
 
 let myObj = {
   address: "Kathmandu",
@@ -28,5 +30,7 @@ createRoot(document.getElementById('root')).render(
     <Greet />
     <Profile />
     <User {...myObj} />
+    <ThemeUpdate />
+    <ConditionalReindering />
   </StrictMode>,
 )

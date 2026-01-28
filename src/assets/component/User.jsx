@@ -8,4 +8,4 @@ let User = ({address, age, fullName}) => {
     )
 }
 
-export default User;
+export default User; 
