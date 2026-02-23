@@ -1,5 +1,6 @@
 import { First } from "./assets/component/Home";
 import Check from "./Day6/Check";
+import TextInputApp from "./Day6/Hands-on/TextInput";
 
 let App = ()=>{
   //return always return only one jsx element 
@@ -23,6 +24,7 @@ let App = ()=>{
       <h3>Count value: {count}</h3>
       <First />
       <Check isLoggedIn={true}/>
+      {/* <TextInputApp /> */}
     </div>
 
   )

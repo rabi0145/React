@@ -10,6 +10,7 @@ import Profile from './assets/component/stateExample/Profile.jsx'
 import User from './assets/component/User.jsx'
 import ThemeUpdate from './Day6/ThemeUpdate.jsx'
 import ConditionalReindering from './Day6/ConditionalRendering.jsx'
+import ListReindering from './Day-7/ListReindering.jsx'
 
 let myObj = {
   address: "Kathmandu",
@@ -22,7 +23,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar />
     {/* String can be given without curly braces but integer must be inside a curly braces */}
-    <First address={"Delhi"} age= {56} fullName = "Ram Prasad" />
+    {/* <First address={"Delhi"} age= {56} fullName = "Ram Prasad" />
     <First {...myObj} />
     <App />
     <Home />
@@ -31,6 +32,7 @@ createRoot(document.getElementById('root')).render(
     <Profile />
     <User {...myObj} />
     <ThemeUpdate />
-    <ConditionalReindering />
+    <ConditionalReindering /> */}
+    <ListReindering/>
   </StrictMode>,
 )

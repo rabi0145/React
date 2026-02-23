@@ -1,22 +1,111 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-h1{
-    color: red;
-}
+/* navbar.css */
 
-.navbar{
+/* Modern aesthetic container */
+.navbar {
     display: flex;
-    background-color: black;
-    color: red;
-    padding: 30px 20px;
     justify-content: space-between;
     align-items: center;
+    padding: 1.2rem 8%;
+    background: rgba(15, 23, 42, 0.9); /* Deep dark background */
+    backdrop-filter: blur(12px); /* Glassmorphism effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #f8fafc;
 }
 
-.menus{
+/* Specific styling for your Inline-styled H1 */
+.navbar h1 {
+    font-size: 1.6rem !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    border: 2px solid #3b82f6 !important;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.navbar h1:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.menus {
     display: flex;
-    gap: 40px;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Styled Search Input */
+.menus input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+.menus input:focus {
+    width: 280px;
+    border-color: #3b82f6;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+.menus input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Navigation Items */
+.menus h4 {
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.menus h4:hover {
+    color: #3b82f6;
+}
+
+/* Animated Underline Effect */
+.menus h4::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3b82f6;
+    transition: width 0.3s ease;
+}
+
+.menus h4:hover::after {
+    width: 100%;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 1.5rem 5%;
+    }
+    
+    .menus {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .menus input {
+        width: 100%;
+        order: 3; /* Push search to the bottom on mobile */
+    }
 }
