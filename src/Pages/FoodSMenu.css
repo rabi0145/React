@@ -1,0 +1,22 @@
+.fsm-container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.fsm-card{
+    border: 2px solid rgb(0, 1, 1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgb(0, 0, 0.3);
+    background-color: white;
+    min-width: 200px;
+    max-width: 250px;
+    transition: 0.8s all ease-in-out;
+}
+
+.fsm-card:hover{
+    box-shadow: 6px 6px 10px rgb(0, 1, 1);
+    transform: scale(1.6);
+    
+}

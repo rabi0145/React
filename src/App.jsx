@@ -1,4 +1,5 @@
 import { First } from "./assets/component/Home";
+import UnControlledFrom from "./Day-8/UnControlledForm";
 import Check from "./Day6/Check";
 import TextInputApp from "./Day6/Hands-on/TextInput";
 
@@ -25,6 +26,7 @@ let App = ()=>{
       <First />
       <Check isLoggedIn={true}/>
       {/* <TextInputApp /> */}
+      <UnControlledFrom />
     </div>
 
   )
