@@ -14,6 +14,17 @@ import ListReindering from './Day-7/ListReindering.jsx'
 import FoodMenu from './Pages/FoodMenu.jsx'
 import FoodSubMenu from './Pages/FoodSubMenu.jsx'
 import UnControlledFrom from './Day-8/UnControlledForm.jsx'
+import UseEffectHook from './Day-9/UseEffectHook.jsx'
+import UseEffectWithCleanup from './Day-9/UseEffectWithCleanup.jsx'
+import Clock from './Day-9/HandsOn/First.jsx'
+import UserProfile from './Day-9/HandsOn/Second.jsx'
+import LoginForm from './Day-8/HandsOn/First.jsx'
+import RegisterForm from './Day-8/HandsOn/Second.jsx'
+import ToDoList from './Day-7/HandsOn/First.jsx'
+import UseMemoEaxmple from './day-10/useMemoExample.jsx'
+import UsecallbackEaxmple from './day-10/UseCallbackExample.jsx'
+import CounterApp from './Day6/Hands-on/CounterApp.jsx'
+import AdvanceCounter from './Day-9/HandsOn/AdvanceCounter.jsx'
 
 let myObj = {
   address: "Kathmandu",
@@ -39,6 +50,18 @@ createRoot(document.getElementById('root')).render(
     {/* <ListReindering/> */}
     {/* <FoodMenu /> */}
     {/* <FoodSubMenu /> */}
-    <UnControlledFrom />
+    {/* <UnControlledFrom /> */}
+    {/* <UseEffectHook /> */}
+    {/* <UseEffectWithCleanup /> */}
+    {/* <Clock /> */}
+    {/* <UserProfile /> */}
+    {/* <LoginForm /> */}
+    {/* <RegisterForm /> */}
+    {/* <UseMemoEaxmple /> */}
+    <ToDoList /> 
+    {/* <CounterApp /> */}
+    {/* <UsecallbackEaxmple/> */}
+    {/* <UseMemoEaxmple /> */}
+    <AdvanceCounter />
   </StrictMode>,
 )
